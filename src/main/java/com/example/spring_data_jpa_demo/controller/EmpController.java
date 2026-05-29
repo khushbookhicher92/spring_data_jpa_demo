@@ -8,8 +8,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
 @RestController
+//@RequestMapping("/")
 public class EmpController {
-
+    @GetMapping("/Welcome")
+    public String welcome(){
+        return "welcome";
+    }
     @Autowired
     EmpServiceImpl empServiceImpl;
 
