@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class EmpController {
     @GetMapping("/Welcome")
     public String welcome(){
-        return "welcome";
+        return "WELCOME";
     }
     @Autowired
     EmpServiceImpl empServiceImpl;
